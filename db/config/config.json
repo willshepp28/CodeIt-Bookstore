@@ -1,6 +1,5 @@
 {
   "development": {
-    "username": "root",
     "password": null,
     "database": "codeit_bookstore",
     "host": "127.0.0.1",

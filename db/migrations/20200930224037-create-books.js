@@ -15,10 +15,20 @@ module.exports = {
         type: Sequelize.TEXT
       },
       subjectId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        onDelete: "CASCADE",
+        references: {
+          model: "Subjects",
+          key: "id"
+        }
       },
       authorId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        onDelete: "CASCADE",
+        references: {
+          model: "Authors",
+          key: "id"
+        }
       },
       pages: {
         type: Sequelize.INTEGER

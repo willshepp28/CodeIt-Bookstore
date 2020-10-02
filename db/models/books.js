@@ -11,6 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      models.Books.belongsTo(models.Subject, { onDelete: "CASCADE"});
+      models.Books.belongsTo(models.Author, { onDelete: "CASCADE"});
     }
   };
   Books.init({
