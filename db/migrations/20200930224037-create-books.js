@@ -30,6 +30,9 @@ module.exports = {
           key: "id"
         }
       },
+      image_url: {
+        type: Sequelize.TEXT
+      },
       pages: {
         type: Sequelize.INTEGER
       },

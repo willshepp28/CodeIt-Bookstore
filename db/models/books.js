@@ -28,6 +28,9 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       type: DataTypes.DOUBLE
     },
+    image_url: {
+      type: DataTypes.TEXT
+    },
     purchase_url: {
       allowNull: false,
       type: DataTypes.TEXT

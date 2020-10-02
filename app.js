@@ -23,7 +23,7 @@ app.get("/", (request, response) => {
 
 app.use("/api/subjects", subjectAPI);
 app.use("/api/books", bookAPI);
-app.use("/api/author.api.js", authorAPI);
+app.use("/api/authors", authorAPI);
 
 
 app.listen(PORT, () => console.log(`Server listening on Port: ${PORT}`))
